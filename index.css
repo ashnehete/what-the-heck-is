@@ -1,7 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
 }
 
 #header {
@@ -16,6 +19,7 @@
     align-items: center;
     flex-direction: column;
     font-size: 3em;
+    font-family: 'Source Code Pro', monospace;
     color: white;
 }
 
@@ -29,4 +33,56 @@ input {
     border-radius: 30px;
     outline: none;
     color: #5c5c5c;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.article {
+    width: 400px;
+    min-width: 80vh;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid rgb(64, 224, 208);
+    border-radius: 10px;
+    box-shadow: none;
+    -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out ;
+  -ms-transition: all .5s ease-out ;
+  -o-transition: all .5s ease-out ;
+  transition: all .5s ease-out ;
+}
+
+.article:hover {
+    box-shadow: 0px 5px 0px rgb(64, 224, 208);
+    cursor: pointer;
+    
+}
+
+.art-header {
+    font-size: 1.5rem;
+}
+
+.article > hr {
+    border-top: 1px solid rgb(64, 224, 208);
+    margin: 4px 0;
+}
+
+.art-body {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.art-img {
+    width: 40%;
+}
+
+.art-desc {
+    padding-left: 10px;
+    text-align: justify;
 }
