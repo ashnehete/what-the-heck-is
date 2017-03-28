@@ -48,6 +48,17 @@ loadJSON('data.json', function (response) {
             return filteredTitles.indexOf(article.title) !== -1;
         });
 
+        if (filteredArticles.length === 0) {
+            filteredArticles = [
+                {
+                    title: 'nothing like this :(',
+                    link: 'mailto:hello@ashnehete.in',
+                    img: 'none.png',
+                    desc: 'Try suggesting it at hello@ashnehete.in along with any links you think may help me!'
+                }
+            ];
+        }
+
         generateList(filteredArticles);
     })
 });
