@@ -17,7 +17,7 @@
         <input type="text" id="search-box">
     </div>
     <div class="container">
-        <div class="article" data-target="https://medium.com/@ashnehete/what-the-heck-is-bootstrap-5a0193e5cfa4" onclick="openArticle(this)">
+        <!--<div class="article" data-target="https://medium.com/@ashnehete/what-the-heck-is-bootstrap-5a0193e5cfa4" onclick="openArticle(this)">
             <span class="art-header">Bootstrap</span>
             <hr>
             <div class="art-body">
@@ -26,8 +26,25 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet dictum ligula, and facilisis.
                 </span>
             </div>
-        </div>
+        </div>-->
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+    
+    <script id="article-template" type="text/x-handlebars-template">
+        {{#articles}}
+        <div class="article" data-target="{{link}}" onclick="openArticle(this)">
+            <span class="art-header">{{title}}</span>
+            <hr>
+            <div class="art-body">
+                <img class="art-img" src="{{img}}">
+                <span class="art-desc">
+                    {{desc}}
+                </span>
+            </div>
+        </div>
+        {{/articles}}
+    </script>
+    
     <script src="index.js"></script>
 </body>
 

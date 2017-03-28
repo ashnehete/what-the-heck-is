@@ -44,21 +44,21 @@ input {
 
 .article {
     width: 400px;
-    min-width: 80vh;
+    min-width: 90vh;
     margin: 10px;
     padding: 20px;
     border: 1px solid rgb(64, 224, 208);
     border-radius: 10px;
     box-shadow: none;
-    -webkit-transition: all .5s ease-out;
-  -moz-transition: all .5s ease-out ;
-  -ms-transition: all .5s ease-out ;
-  -o-transition: all .5s ease-out ;
-  transition: all .5s ease-out ;
+    -webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out ;
+    -ms-transition: all .25s ease-out ;
+    -o-transition: all .25s ease-out ;
+    transition: all .25s ease-out ;
 }
 
 .article:hover {
-    box-shadow: 0px 5px 0px rgb(64, 224, 208);
+    box-shadow: 5px 5px 0px rgb(64, 224, 208);
     cursor: pointer;
     
 }
