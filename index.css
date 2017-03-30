@@ -105,3 +105,15 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.art-tags {
+    margin-top: 15px;
+}
+
+.art-tags > span {
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #40e0d0;
+    color: white;
+}
