@@ -1,4 +1,5 @@
 function openArticle(article) {
+    ga('send', 'event', 'article', 'click', article.dataset.name);
     var link = article.dataset.target;
     window.open(link, '_blank');
 }

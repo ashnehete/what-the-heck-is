@@ -9,16 +9,17 @@ body {
 
 #header {
     height: 350px;
+    width: 100vw;
     background: -moz-linear-gradient(-45deg, #00ced1 0%, #40e0d0 100%);
     background: -webkit-linear-gradient(-45deg, #00ced1 0%, #40e0d0 100%);
     background: linear-gradient(135deg, #00ced1 0%, #40e0d0 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3300ced1', endColorstr='#3340e0d0', GradientType=1);
-    background-image: linear-gradient(135deg, #00ced1 0%, #40e0d0 100%), url('bg.png'), repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-family: 'Source Code Pro', monospace;
+    text-align: center;
     color: white;
 }
 
@@ -34,6 +35,7 @@ body {
 
 #header > input {
     height: 30px;
+    max-width: 80%;
     font-size: 2rem;
     padding: 10px;
     padding-left: 20px;
@@ -53,7 +55,7 @@ body {
 
 .article {
     width: 400px;
-    min-width: 90vh;
+    max-width: 80%;
     margin: 10px;
     padding: 20px;
     border: 1px solid #40e0d0;
@@ -116,4 +118,10 @@ body {
     margin-right: 5px;
     background-color: #40e0d0;
     color: white;
+}
+
+@media (max-width: 480px) {
+    #header > #title {
+        font-size: 2em;
+    }
 }
