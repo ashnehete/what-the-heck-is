@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+#header {
+    height: 350px;
+    width: 100vw;
+    background: -moz-linear-gradient(-45deg, #00ced1 0%, #40e0d0 100%);
+    background: -webkit-linear-gradient(-45deg, #00ced1 0%, #40e0d0 100%);
+    background: linear-gradient(135deg, #00ced1 0%, #40e0d0 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3300ced1', endColorstr='#3340e0d0', GradientType=1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    color: white;
+}
+
+#header > #title {
+    font-size: 3em;
+}
+
+#header > #subtitle {
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+}
+
+#header > input {
+    height: 30px;
+    max-width: 80%;
+    font-size: 2rem;
+    padding: 10px;
+    padding-left: 20px;
+    margin: 20px 0;
+    border: 1px solid #00ced1;
+    border-radius: 30px;
+    outline: none;
+    color: #5c5c5c;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.article {
+    width: 400px;
+    max-width: 80%;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #40e0d0;
+    border-radius: 10px;
+    box-shadow: none;
+    -webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out ;
+    -ms-transition: all .25s ease-out ;
+    -o-transition: all .25s ease-out ;
+    transition: all .25s ease-out ;
+}
+
+.article:hover {
+    box-shadow: 5px 5px 0px #40e0d0;
+    cursor: pointer;
+    
+}
+
+.art-header {
+    font-size: 1.5rem;
+}
+
+.article > hr {
+    border-top: 1px solid #40e0d0;
+    margin: 4px 0;
+}
+
+.art-body {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.art-img {
+    width: 40%;
+}
+
+.art-desc {
+    padding-left: 10px;
+    text-align: justify;
+}
+
+#footer {
+    height: 100px;
+    background-color: #f0f0f0;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.art-tags {
+    margin-top: 15px;
+}
+
+.art-tags > span {
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #40e0d0;
+    color: white;
+}
+
+@media (max-width: 480px) {
+    #header > #title {
+        font-size: 2em;
+    }
+}
