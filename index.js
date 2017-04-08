@@ -1,3 +1,9 @@
+// Add days functionality
+ Date.prototype.addDays = function(days) {
+   this.setDate(this.getDate() + parseInt(days));
+   return this;
+ };
+
 function openArticle(article) {
     ga('send', 'event', 'article', 'click', article.dataset.name);
     var link = article.dataset.target;
@@ -36,6 +42,15 @@ loadJSON('data.json', function (response) {
         return article.title;
     });
 
+    // Generate isNew for articles
+    var now = Date.now();
+    var articles = articles.map(function(article) {
+        var date = new Date(article.date);
+        date.addDays(10);
+        article.isNew = now <= date;
+        return article;
+    });
+
     generateList(articles);
 
     var input = document.getElementById('search-box');
@@ -55,7 +70,8 @@ loadJSON('data.json', function (response) {
                     title: 'nothing like this :(',
                     link: 'mailto:hello@ashnehete.in',
                     img: 'none.png',
-                    desc: 'Try suggesting it at hello@ashnehete.in along with any links you think may help me!'
+                    desc: 'Try suggesting it at hello@ashnehete.in along with any links you think may help me!',
+                    date: '2016-12-31T18:30:00.000Z'
                 }
             ];
         }
