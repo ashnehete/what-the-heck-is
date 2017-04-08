@@ -1,10 +1,27 @@
 [
     {
+        "title": "CSS",
+        "link": "https://medium.com/@ashnehete/what-the-heck-is-css-3c1b2f4f7e0e",
+        "img": "https://cdn-images-1.medium.com/max/1200/1*mI0a6cTpcvuhoNw2pvlzUw.png",
+        "desc": "CSS helps us separate the document content from the presentation. It is used to style the HTML content on a website.",
+        "tags": [
+            "css",
+            "web",
+            "language",
+            "design"
+        ],
+        "date": "2017-04-09T00:12:17.553467Z"
+    },
+    {
         "title": "HTML",
         "link": "https://medium.com/@ashnehete/what-the-heck-is-html-4bda639d0e9",
         "img": "https://cdn-images-1.medium.com/max/1200/1*pV_KVJsHRRk7N9WzxEAiAQ.png",
         "desc": "This is the information age, powered by the internet. And HTML is what powers this information exchange.",
-        "tags": ["html", "web", "language"],
+        "tags": [
+            "html",
+            "web",
+            "language"
+        ],
         "date": "2017-04-01T18:30:00.000Z"
     },
     {
@@ -12,7 +29,11 @@
         "link": "https://medium.com/@ashnehete/what-the-heck-is-bootstrap-5a0193e5cfa4",
         "img": "https://cdn-images-1.medium.com/max/1200/1*wXhdUKkpJUQZ-kqtBWCwWA.png",
         "desc": "Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.",
-        "tags": ["css", "web", "framework"],
+        "tags": [
+            "css",
+            "web",
+            "framework"
+        ],
         "date": "2017-02-25T18:30:00.000Z"
     }
 ]
